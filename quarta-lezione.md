@@ -10,13 +10,13 @@ Finora si è visto come eseguire espressioni all'interno di una funzione utilizz
 
 Esempio [Python]
 
->   def f(x):
+    def f(x):
        return (3*(x+2))/4
 
 Spesso nella programmazione succede di trovarsi di fronte a un "bivio" a cui il programma deve porre una "scelta" di fronte a diverse "opzioni". Per esempio, per capire se un numero intero x è pari o dispari, con le conoscenze finora acquisite si potrebbe ricorrere a un'espressione. Essa restituirà come valori 0 se il numero immesso è pari, x se il numero immesso è dispari. Prima di procedere è bene introdurre un ulteriore operatore matematico: il modulo (simbolo %). Differentemente dal "omonimo" matematico |x|, il modulo informatico è un operatore che "returna"/restituisce il resto della divisione tra due numeri interi. Per esempio 4 % 2 restituirà il valore 0, in quanto il resto della divisione tra i numeri 4 e 2 dà resto 0.
 Invece 5 % 3 darà come risultato 2, visto che il resto della divisione tra 5 e 3 è appunto 2. Attenzione a non confondere il modulo (%) con la divisione (/) in quanto i due operatori danno risultati differenti. Vediamo il modulo in azione:
 
->   def f(x):
+    def f(x):
         return x%2
 
 Con questa funzione avremo come risultato il resto della divisione tra il nostro numero x e il numero 2.
@@ -26,7 +26,7 @@ Vediamo ora, ignorando l'esistenza dell'operatore modulo, come è possibile svil
 
 Nella programmazione esiste un modo molto più immediato per sapere quale strada il programma deve prendere quando si trova di fronte a un simile bivio. Qui entrano in gioco i costrutti condizionali.
 
->   def f(x):
+    def f(x):
         if (x%2) == 0:
             return 0
         else:
@@ -45,7 +45,6 @@ Oltre a if ed else, abbiamo incontrato un nuovo tipo di operatore, ==, che rappr
 == uguale   (es. 2 == 2)
 != diverso  (es. 2 != 3)
 </>  minore/maggiore   (es. 3 < 5, 7 > 4)
-<= minore o uguale
->= maggiore o uguale
+<=/>= minore o uguale/maggiore o uguale
 
-> Modificato l'ultima volta da Alberto Soffritti
+    Modificato l'ultima volta da Alberto Soffritti
